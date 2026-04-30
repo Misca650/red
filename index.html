@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" type="image/png" href="./src/assets/studio.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500&family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="./src/index.css">
+    <script type="module" src="./src/index.js"></script>
+    <title>RedTown [ Official ]</title>
+</head>
+    <body data-aos="fade-left" >
+
+    <div class="toast" id="toast"></div>
+
+    <div class="loader-container">
+        <div class="loader-spinner"></div>
+    </div>
+
+    <div class="bg-wrapper">
+        <div class="bg-image"></div>
+        <div class="bg-overlay"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-left">
+            <div class="logo">
+                <img src="https://cdn.discordapp.com/attachments/1449364616621854861/1494703140761637125/82_66E0F5B.png?ex=69f36446&is=69f212c6&hm=8412eec0af21dfa85e2db84cfec9415b920341c942c2b15b9758b61cae77ad67&" alt="Red Town Logo">
+            </div>
+            <ul class="nav-tabs">
+                <li><a href="#" class="nav-item active" data-target="home">HOME</a></li>
+                <li><a href="#" class="nav-item" data-target="shop">SHOP</a></li>
+                <li><a href="#" class="nav-item" data-target="point">POINT</a></li>
+                <li><a href="#" class="nav-item" data-target="contact">CONTACT</a></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <a href="#" class="login-btn">
+                <svg viewBox="0 0 24 24" style="width: 18px; height: 18px; fill: currentColor;">
+                    <path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/>
+                </svg>
+                Login
+            </a>
+        </div>
+    </nav>
+
+    <main class="main-container">
+        <div id="home" class="page-content active initial-load">
+            <div class="hero-content">
+                <div class="hero-title">
+                    <span class="title-white">WELCOME TO</span>
+                    <span class="title-red">RED TOWN</span>
+                </div>
+                <p class="hero-desc">ยินดีต้อนรับสู่เมือง Red town เปิดใหม่ และระบบใหม่ พร้อมสไตล์และการเล่นที่แตกต่าง</p>
+                <div class="action-group">
+                    <a href="#" onclick="play()" class="btn-play">
+                        Play
+                    </a>
+                    <div class="icon-links">
+                        <a href="#" onclick="discord()" class="icon-link">
+                            <svg viewBox="0 0 24 24"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg>
+                        </a>
+                        <a href="#" class="icon-link">
+                            <svg viewBox="0 0 448 512"><path d="M448 209.91a210.06 210.06 0 0 1-122.77-39.25V349.38A162.55 162.55 0 1 1 185 188.31V278.2a74.62 74.62 0 1 0 52.23 71.18V0l88 0a121.18 121.18 0 0 0 1.86 22.17A122.18 122.18 0 0 0 381 102.39a121.43 121.43 0 0 0 67 20.14z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="shop" class="page-content">
+            <h2 style="font-size: 3rem; color: #fff; letter-spacing: 2px;">SHOP <span style="color: #ff2a2a;">SYSTEM</span></h2>
+        </div>
+
+        <div id="point" class="page-content">
+            <h2 style="font-size: 3rem; color: #fff; letter-spacing: 2px;">POINT <span style="color: #ff2a2a;">SYSTEM</span></h2>
+        </div>
+
+        <div id="contact" class="page-content">
+            <h2 style="font-size: 3rem; color: #fff; letter-spacing: 2px;">CONTACT <span style="color: #ff2a2a;">US</span></h2>
+        </div>
+
+        <div id="footer">
+            <p>© 2025 RedTown. Todos os direitos reservados.</p>
+        </div>
+    </main>
+
+</body>
+
+<script>
+  AOS.init();
+</script>
+
+</html>
