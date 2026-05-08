@@ -353,8 +353,8 @@ li {
     left: 0;
     right: 0;
     background: rgba(0, 0, 0, 0.8);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    /* backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); */
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     padding: 20px;
     text-align: center;
