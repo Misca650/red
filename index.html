@@ -11,6 +11,9 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="./src/index.css">
     <script type="module" src="./src/index.js"></script>
+
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    
     <title>RedTown [ Official ]</title>
 </head>
     <body data-aos="fade-left" >
@@ -25,6 +28,12 @@
         <div class="bg-image"></div>
         <div class="bg-overlay"></div>
     </div>
+
+    <button style="display: none;" class="g-recaptcha" 
+        data-sitekey="6Le3WeAsAAAAAKAH2UQYSbMaJ7TpbEeKyu1gQH5S" 
+        data-callback='onSubmit' 
+        data-action='submit'>Submit</button>
+
 
     <nav class="navbar">
         <div class="nav-left">
